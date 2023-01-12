@@ -58,3 +58,89 @@ body{
     background-color: var(--bg-grey);
 }
 
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 1.1em;
+}
+
+#logo{
+    width: 3em;
+}
+
+.menu-label{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 0.8em;
+    gap: 0.3em;
+}
+
+.menu-btn{
+    border: none;
+    background-color: transparent;
+}
+
+.menu-icon{
+    color: var(--grey99);
+}
+
+.topnav{
+    display: none;
+}
+
+/* Main */
+main{
+    padding: 0.6em;
+}
+
+/* Hero */
+#hero{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 0.5em;
+}
+
+#hero .intro{
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .intro h1{
+    font: 1.7em AktivBD, sans-serif;
+    color: var(--grey99);
+    margin-bottom: 0.2em;
+    text-align: left;
+}
+
+#hero .intro .p-intro{
+    font: 1.1em AktivLT, sans-serif;
+    color: var(--grey70);
+    margin-bottom: 2em;
+}
+
+#hero .abstract{
+    color: black;
+    font: 0.95em AktivRG, sans-serif;
+    margin-bottom: 1.4em;
+}
+
+#hero .cta{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5em;
+}
+
+#hero .cta a{
+    text-decoration: underline;
+}
+
+#hero .primary a{
+    color: var(--grey70);
+}
+
+#hero .secondary a{
+    color: var(--accent-red);
+}
