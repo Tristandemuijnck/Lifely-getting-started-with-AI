@@ -1,0 +1,60 @@
+/* Variables */
+:root{
+    --grey99: #3C3B34;
+    --grey70: #9B9A92;
+    --grey50: #C6C5BD;
+    --grey20: #EAEAE6;
+    --bg-grey: #F6F6F4;
+    --accent-red: #FF6B6B;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Font import */
+@font-face {
+    font-family: 'AktivBD';
+    src: url(../assets/Font/AktivGrotesk_Bd.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'AktivLT';
+    src: url(../assets/Font/AktivGrotesk_Lt.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'AktivMD';
+    src: url(../assets/Font/AktivGrotesk_Md.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'AktivRG';
+    src: url(../assets/Font/AktivGrotesk_Rg.ttf);
+    font-weight: normal;
+}
+
+/* General */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font: 100%/1.4 AktivRG, sans-serif;
+    background-color: var(--bg-grey);
+}
+
