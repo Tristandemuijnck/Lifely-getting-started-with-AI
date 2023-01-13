@@ -185,3 +185,7 @@ header{
 #quote .quote-def{
     color: var(--grey20);
 }
+
+#steps{
+    background-color: var(--grey20);
+}
