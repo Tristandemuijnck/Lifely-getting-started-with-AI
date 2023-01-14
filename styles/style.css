@@ -181,6 +181,7 @@ header{
 
 .quote .quote-heading h2{
     color: var(--bg-grey);
+    font: var(--font-title);
 }
 
 .quote .quote-phonetic{
@@ -281,6 +282,44 @@ header{
 }
 
 /* Cases */
+.cases{
+    background-color: var(--grey99);
+    padding: var(--pad-section);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.cases-title{
+    font: var(--font-title);
+    color: var(--bg-grey);
+}
+
+.case-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.case-title{
+    color: var(--grey20);
+    margin-bottom: 0.5em;
+}
+
+.case-desc{
+    color: var(--bg-grey);
+    font: var(--font-subtitle);
+}
+
+.case-link{
+    color: var(--accent-red);
+    text-decoration: underline;
+}
+
+.case-img{
+    margin-top: 1.5em;
+    border: solid 1px var(--grey70);
+}
+
 .ruler-case{
     width: 100%;
     height: 8em;
