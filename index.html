@@ -187,7 +187,14 @@
                     <p class="case-desc">
                         Allowing law experts to focus on their expertise.
                     </p>
-                    <a class="case-link" href="#">Learn more about this case</a>
+                    <div class="case-cta">
+                        <a class="case-link" href="#">Learn more about this case</a>
+                        <svg class="arrow-right" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <title>Arrow to the right</title>
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                    </div>
+                    
                 </div>
                 <!-- Case image -->
                 <img class="case-img ruler-case" src="assets/Cases/Ruler.jpg" alt="Laptop with finished product">
@@ -201,7 +208,13 @@
                     <p class="case-desc">
                         Predicting chances of success.
                     </p>
-                    <a class="case-link" href="#">Learn more about this case</a>
+                    <div class="case-cta">
+                        <a class="case-link" href="#">Learn more about this case</a>
+                        <svg class="arrow-right" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <title>Arrow to the right</title>
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                    </div>
                 </div>
                 <!-- Case image -->
                 <img class="case-img toptaal-case" src="assets/Cases/TopTaal.jpeg" alt="Table with a person and bag">
@@ -209,19 +222,19 @@
         </section> <!-- End cases section -->
 
         <!-- Contact section -->
-        <section id="contact">
+        <section class="contact" id="contact">
             <!-- Contact title -->
-            <h2>Not sure yet? Let's discuss.</h2>
+            <h2 class="contact-title">Not sure yet? Let's discuss.</h2>
             <!-- Contact info -->
             <div class="contact-info">
-                <p>Call us 020 846 19 05</p>
+                <p>Call us <span class="phonenumber">020 846 19 05</span></p>
                 <p>or</p>
                 <p>Mail our expert <span class="email">martijn@lifely.nl</span></p>
-                <hr>
             </div>
+            <hr>
             <!-- Contact form -->
             <div class="contact-form">
-                <p>
+                <p class="contact-form-text">
                     Let's explore your goals, and figure out if we can help you achieve them.
                 </p>
                 <!-- Calendar -->
@@ -230,25 +243,45 @@
         </section> <!-- End contact section -->
 
         <!-- Related section -->
-        <section id="related">
+        <section class="related" id="related">
             <!-- Related title -->
-            <h2>Read more about AI</h2>
+            <h2 class="related-title">Read more about AI</h2>
             <!-- Related articles -->
             <div class="related-articles">
                 <!-- Card 1 -->
                 <div class="related-card">
-                    <h3>Robotic Process Automation</h3>
-                    <a href="#">Read more</a>
+                    <h3 class="related-card-heading">Robotic Process Automation</h3>
+                    <div class="related-cta">
+                        <a class="related-anchor" href="#">Read more</a>
+                        <svg class="arrow-right" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <title>Arrow to the right</title>
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                    </div>
                 </div>
+                <!-- <hr class="related-hr"> -->
                 <!-- Card 2 -->
                 <div class="related-card">
-                    <h3>AI-driven Digital Transformation</h3>
-                    <a href="#">Read more</a>
+                    <h3 class="related-card-heading">AI-driven Digital Transformation</h3>
+                    <div class="related-cta">
+                        <a class="related-anchor" href="#">Read more</a>
+                        <svg class="arrow-right" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <title>Arrow to the right</title>
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                    </div>
                 </div>
+                <!-- <hr class="related-hr"> -->
                 <!-- Card 3 -->
                 <div class="related-card">
-                    <h3>How we can help</h3>
-                    <a href="#">Go to solutions</a>
+                    <h3 class="related-card-heading">How we can help</h3>
+                    <div class="related-cta">
+                        <a class="related-anchor" href="#">Go to solutions</a>
+                        <svg class="arrow-right" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                            <title>Arrow to the right</title>
+                            <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section> <!-- End related section -->
@@ -257,11 +290,11 @@
 
     <footer>
         <!-- Footer navigation -->
-        <section id="footer-nav">
+        <section class="footer-nav" id="footer-nav">
 
             <!-- Lifely list -->
             <div class="footer-list">
-                <h2>Lifely</h2>
+                <h2 class="footer-heading">Lifely</h2>
                 <div class="footer-sublist">
                     <ul>
                         <li><a href="#">Work</a></li>
@@ -276,7 +309,7 @@
 
             <!-- Services list -->
             <div class="footer-list">
-                <h2>Services</h2>
+                <h2 class="footer-heading">Services</h2>
                 <div class="footer-sublist">
                     <ul>
                         <li><a href="#">Agile Product Teams</a></li>
@@ -288,7 +321,7 @@
 
             <!-- Solutions list -->
             <div class="footer-list">
-                <h2>Solutions</h2>
+                <h2 class="footer-heading">Solutions</h2>
                 <div class="footer-sublist">
                     <ul>
                         <li><a href="#">Software as a Service</a></li>
@@ -305,29 +338,33 @@
         </section> <!-- End footer navigation section -->
 
         <!-- Tagline section -->
-        <section id="tagline">
+        <section class="tagline" id="tagline">
             <div class="tagline-heading">
-                <h2>Solve for good</h2>
-                <p>Innovation that is long-lasting and worthwhile.</p>
+                <h2 class="tagline-title">Solve for good</h2>
+                <p class="tagline-subtitle">Innovation that is long-lasting and worthwhile.</p>
             </div>
             <div class="tagline-explanation">
                 <div class="tagline-text">
-                    <p><span>[solve]</span> We are warm hearted problem solvers.</p>
+                    <p><span class="tagline-span">[solve]</span> We are warm hearted problem solvers.</p>
                 </div>
                 <div class="tagline-text">
-                    <p><span>[for good]</span> We're here to help until you can help yourself.</p>
+                    <p><span class="tagline-span">[for good]</span> We're here to help until you can help yourself.</p>
                 </div>
                 <div class="tagline-text">
-                    <p><span>[good]</span> The company we keep, and the code we operate by, are good.</p>
+                    <p><span class="tagline-span">[good]</span> The company we keep, and the code we operate by, are good.</p>
                 </div>
             </div>
         </section> <!-- End tagline section -->
 
         <!-- Credentials section -->
-        <section id="credentials">
-            <p>Lifely Studio, Prinsengacht 197D Amsterdam</p>
-            <p>Visit us from 09:00 till 17:00, or call us at 020 846 19 05</p>
-            <p>Privacy & Cookies</p>
+        <section class="credentials" id="credentials">
+            <p class="credentials-text credentials-primary">Lifely Studio, Prinsengacht 197D Amsterdam</p>
+            <div class="credentials-contactinfo">
+                <p class="credentials-text">Visit us from 09:00 till 17:00</p> 
+                <p class="credentials-text">or</p>
+                <p class="credentials-text">call us at <span class="phonenumber">020 846 19 05</span></p>
+            </div>
+            <a href="#" class="credentials-text credentials-underline">Privacy & Cookies</a>
         </section>
     </footer>
 
