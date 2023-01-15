@@ -1,0 +1,118 @@
+/* Body container */
+body{
+    container-type: inline-size;
+}
+
+/* Header container */
+header{
+    container-type: inline-size;
+}
+
+/* Banner container */
+.banner-img-wrapper{
+    container-type: inline-size;
+}
+
+/* Main container */
+main{
+    container-type: inline-size;
+}
+
+/* Hero container */
+.hero{
+    container-type: inline-size;
+}
+
+/* Steps container */
+.steps{
+    container-type: inline-size;
+}
+
+.cases{
+    container-type: inline-size;
+}
+
+@container (min-width: 400px){
+
+    /* Header container */
+    .menu-label{
+        display: none;
+    }
+
+    .topnav{
+        display: flex;
+    }
+
+    .topnav ul{
+        display: flex;
+        gap: 1em;
+    }
+
+    .topnav ul li a{
+        color: var(--grey70);
+        text-decoration: none;
+        font: var(--font-abstract);
+    }
+
+    /* Steps container */
+    .steps-title{
+        max-width: 14em;
+    }
+
+    .step-heading{
+        max-width: 22em;
+    }
+}
+
+@container (min-width: 600px){
+
+    /* Body container */
+    header{
+        padding: 1.1em 2em;
+    }
+
+    /* Main container */
+    .hero, .quote, .cases, .contact, .related, .footer-nav, .tagline, .credentials{
+        padding: var(--med-padding);
+    }
+
+    /* Steps container */
+    .steps-title{
+        padding-left: 1.2em;
+    }
+    
+    .step-left{
+        padding-left: 2em;
+    }
+
+    .step-right{
+        padding-right: 2em;
+    }
+
+    .step-info{
+        display: flex;
+        flex-direction: row;
+        padding: 0 2em;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info-left{
+        flex-direction: row-reverse;
+    }
+
+    .step-desc-wrap{
+        padding: 0;
+    }
+
+    .step-image{
+        display: block;
+        width: 200px;
+        height: auto;
+        flex: auto;
+        max-width: 50cqw;
+    }
+
+    /* Cases container */
+
+}

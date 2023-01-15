@@ -12,6 +12,8 @@
     --font-abstract: 0.95em AktivRG, sans-serif;
 
     --pad-section: 2.5em 1.1em;
+    --med-padding: 2.5em 2em;
+    --large-padding: 2.5em 4em;
 }
 
 /* Reset */
@@ -281,6 +283,10 @@ header{
     max-width: 18em;
 }
 
+.step-image{
+    display: none;
+}
+
 /* Cases */
 .cases{
     background-color: var(--grey99);
@@ -331,6 +337,10 @@ header{
 
 .case-cta .arrow-right{
     fill: var(--accent-red);
+}
+
+.case-card{
+    margin-bottom: 1em;
 }
 
 .ruler-case{
@@ -477,7 +487,6 @@ header{
     background-color: var(--bg-grey);
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1em;
 }
 
