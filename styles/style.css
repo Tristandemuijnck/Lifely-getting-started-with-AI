@@ -389,7 +389,8 @@ header{
     display: flex;
     flex-direction: column;
     gap: 2em;
-    background-color: var(--grey70);
+    /* background-color: var(--grey70); */
+    background-color: var(--accent-red);
 }
 
 .related-title{
