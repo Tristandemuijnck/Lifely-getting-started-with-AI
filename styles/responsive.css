@@ -1,40 +1,5 @@
-/* Body container */
-body{
-    container-type: inline-size;
-}
+@media (min-width: 400px){
 
-/* Header container */
-header{
-    container-type: inline-size;
-}
-
-/* Banner container */
-.banner-img-wrapper{
-    container-type: inline-size;
-}
-
-/* Main container */
-main{
-    container-type: inline-size;
-}
-
-/* Hero container */
-.hero{
-    container-type: inline-size;
-}
-
-/* Steps container */
-.steps{
-    container-type: inline-size;
-}
-
-.cases{
-    container-type: inline-size;
-}
-
-@container (min-width: 400px){
-
-    /* Header container */
     .menu-label{
         display: none;
     }
@@ -54,7 +19,6 @@ main{
         font: var(--font-abstract);
     }
 
-    /* Steps container */
     .steps-title{
         max-width: 14em;
     }
@@ -64,19 +28,16 @@ main{
     }
 }
 
-@container (min-width: 600px){
+@media (min-width: 600px){
 
-    /* Body container */
     header{
         padding: 1.1em 2em;
     }
 
-    /* Main container */
     .hero, .quote, .cases, .contact, .related, .footer-nav, .tagline, .credentials{
         padding: var(--med-padding);
     }
 
-    /* Steps container */
     .steps-title{
         padding-left: 1.2em;
     }
@@ -103,16 +64,427 @@ main{
 
     .step-desc-wrap{
         padding: 0;
+        width: 50%;
+    }
+
+    .step-image-align{
+        align-self: center;
+        margin: auto;
     }
 
     .step-image{
         display: block;
-        width: 200px;
         height: auto;
-        flex: auto;
-        max-width: 50cqw;
+        max-width: 250px;
     }
 
-    /* Cases container */
+    .case-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2em;
+    }
 
+    .case-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .case-info{
+        width: 48%;
+        justify-content: center;
+    }
+
+    .case-img{
+        width: 48%;
+        height: auto;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .square{
+        display: flex;
+    }
+
+    .reverse-row{
+        flex-direction: row-reverse;
+    }
+
+    .contact-form{
+        text-align: center;
+    }
+
+    .related{
+        padding: 2.5em 2em 0em 2em;
+    }
+
+    .related-articles{
+        flex-direction: row;
+    }
+
+    .related-card{
+        border-radius: 0.3em 0.3em 0 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        padding: 1em 0.6em 0.5em 0.6em;
+        background-color: var(--grey99);
+        height: 10em;
+        width: 12em;
+    }
+
+    .related-card-heading{
+        color: var(--bg-grey);
+        max-width: 6em;
+        font-family: AktivBD;
+    }
+}
+
+@media (min-width: 700px){
+
+    .abstract{
+        max-width: 30em;
+    }
+
+    .quote-def{
+        max-width: 30em;
+    }
+
+    .contact-info{
+        flex-direction: row;
+    }
+
+    .footer-nav{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: var(--med-padding);
+    }
+
+    .footer-list{
+        width: auto;
+        align-items: flex-start;
+    }
+    
+    .footer-sublist{
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .credentials-contactinfo{
+        flex-direction: row;
+        gap: 3px;
+    }
+
+    .step-heading{
+        max-width: 34em;
+    }
+
+    .step-image{
+        max-width: 300px;
+    }
+
+    .step-count{
+        display: flex;
+        gap: 3px;
+    }
+
+    .step-count-extra{
+        display: block;
+    }
+
+    .related-card{
+        height: 10em;
+        width: 12em;
+    }
+
+    .related-card-heading{
+        max-width: 6em;
+    }
+}
+
+@media (min-width: 800px){
+
+    header{
+        padding: 1.1em 4em;
+    }
+
+    .hero, .quote, .cases, .contact, .related, .footer-nav, .tagline, .credentials{
+        padding: var(--large-padding);
+    }
+
+    .banner-img-wrapper{
+        display: none;
+    }
+
+    .hero{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5em 0 2.5em 4em;
+        align-items: center;
+    }
+
+    .hero-content{
+        width: 75%;
+    }
+
+    .hero .intro h1{
+        font-size: 2.1em;
+    }
+
+    .hero-sideimg{
+        display: block;
+        width: 25%;
+    }
+
+    .hero-img{
+        width: 100%;
+        height: auto;
+    }
+
+    .steps-title{
+        padding-left: 2.5em;
+        max-width: 30em;
+    }
+
+    .step-heading{
+        max-width: 35em;
+    }
+    
+    .step-left{
+        padding-left: 4.25em;
+    }
+
+    .step-right{
+        padding-right: 4.25em;
+    }
+
+    .step-info{
+        padding: 0 4em;
+    }
+
+    .step-desc{
+        max-width: 24em;
+    }
+
+    .case-cards{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .case-card{
+        flex-direction: column-reverse;
+        gap: 1em;
+        width: 50%;
+    }
+
+    .reverse-row{
+        flex-direction: column-reverse;
+        width: 50%;
+    }
+
+    .case-info{
+        width: 100%;
+    }
+
+    .case-img{
+        margin: none auto;
+        width: 80%;
+    }
+
+    .case-desc{
+        max-width: 15em;
+    }
+
+    .related{
+        padding: 2.5em 4em 0em 4em;
+    }
+
+    .related-card{
+        padding: 1.6em 1.2em;
+    }
+
+    .related-card{
+        height: 12em;
+        width: 14em;
+    }
+
+    .related-card-heading{
+        max-width: 6em;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .hero .intro h1{
+        font-size: 2.5em;
+    }
+
+    .hero .abstract{
+        font-size: 1.2em;
+    }
+
+    .hero .intro .p-intro{
+        font-size: 1.3em;
+    }
+
+    .hero .cta{
+        font: var(--font-abstract);
+        font-size: 1.1em;
+    }
+
+    .quote .quote-heading h2{
+        font: var(--font-title-large);
+        font-size: 2em;
+    }
+
+    .quote .quote-phonetic{
+        font-size: 1.4em;
+    }
+
+    .quote-def{
+        font: var(--font-abstract);
+        font-size: 1.1em;
+        max-width: 30em;
+    }
+
+    .steps-title{
+        font-size: 2em;
+        padding-left: 2em;
+    }
+
+    .step-heading{
+        max-width: 45em;
+    }
+
+    .step-right{
+        padding-right: 4em;
+    }
+
+    .step-left{
+        padding-left: 4em;
+    }
+
+    .step-title, .step-count{
+        font-size: 1.5em;
+    }
+
+    .step-subtitle{
+        font: var(--font-subtitle-large);
+    }
+
+    .step-desc{
+        font: var(--font-abstract-large);
+    }
+
+    .step-desc-wrap{
+        width: 50%;
+    }
+
+    .step-image-align{
+        align-self: center;
+        margin: auto;
+    }
+
+    .case-card{
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .case-img{
+        width: 100%;
+    }
+
+    .contact-title{
+        margin-bottom: 1em;
+    }
+
+    .related-title{
+        margin-bottom: 1em;
+    }
+
+    .related-card{
+        height: 14em;
+        width: 15em;
+    }
+
+    .related-card-heading{
+        max-width: 6em;
+    }
+
+    .footer-nav{
+        padding: 6em 4em;
+    }
+
+    .tagline{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        row-gap: 2em;
+        padding: 6em 4em;
+    }
+
+    .tagline-title{
+        font: var(--font-title-large);
+    }
+
+    .tagline-subtitle{
+        font-size: 1.1em;
+    }
+
+    .tagline-text{
+        font-size: 1.1em;
+    }
+
+    .main-contactinfo{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .credentials-primary::after{
+        content: "|";
+        display: inline-block;
+        padding: 0 8px 0 5px;
+        width: 1px;
+        color: var(--accent-red);
+    }
+}
+
+@media (min-width: 1920px){
+
+    .hero{
+        align-items: flex-start;
+    }
+
+    .intro{
+        margin-top: 8em;
+        margin-bottom: 2em;
+    }
+
+    .hero-sideimg{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-img{
+        height: 90%;
+        width: 90%;
+    }
+
+    .case-img{
+        margin: none auto;
+        width: 80%;
+    }
+
+    .case-card{
+        align-items: flex-start;
+    }
 }
