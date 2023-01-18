@@ -11,6 +11,8 @@ menuBtn.addEventListener('click', function() {
 
 closeBtn.addEventListener('click', function() {
     topNav.classList.remove('active-nav');
-    closeBtn.classList.remove('show');
+    setTimeout(() => {
+        closeBtn.classList.remove('show');
+    }, 500);
     console.log('removed class');
 });
