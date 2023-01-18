@@ -182,6 +182,7 @@ header{
     padding: var(--pad-section);
     display: flex;
     flex-direction: column;
+    transform: translateX(-110%);
 }
 
 .quote .quote-heading{
