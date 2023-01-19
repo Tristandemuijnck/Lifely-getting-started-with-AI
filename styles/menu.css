@@ -152,7 +152,7 @@
     background-color: var(--grey99);
     position: absolute;
     /* display: flex; */
-    transition: width 250ms ease-out;
+    transition: width 550ms ease-out;
     z-index: 21;
 }
 
