@@ -50,7 +50,7 @@ gsap.from(".quote-heading, .quote-def",{
         toggleActions: "play none none none"
     },
     stagger: 0.3,
-    xPercent: -110,
+    xPercent: -120,
     // x: 0,
     duration: .6,
     ease: "power1.out"
@@ -107,7 +107,7 @@ steps.forEach((step) => {
     });
 
     stepTlLeft.from(stepInfoLeft,{
-        xPercent: -110,
+        xPercent: 110,
     });
 
     stepTlRight.from(stepRight,{
@@ -115,6 +115,6 @@ steps.forEach((step) => {
     });
 
     stepTlRight.from(stepInfoRight,{
-        xPercent: 110,
+        xPercent: -110,
     });
 });
