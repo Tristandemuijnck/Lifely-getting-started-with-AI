@@ -3,11 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 let mm = gsap.matchMedia();
 
 // Hero Animation
-const heroTl = gsap.timeline({
-    defaults: {
-        duration: .6,
-    },
-});
+const heroTl = gsap.timeline({defaults: {duration: .6,}});
 const steps = document.querySelectorAll(".step");
 
 // Small size and up
@@ -118,3 +114,140 @@ steps.forEach((step) => {
         xPercent: -110,
     });
 });
+
+// Cases Animation
+
+const caseTl = gsap.timeline({});
+const cardLeft = document.querySelector(".card-left");
+const cardRight = document.querySelector(".card-right");
+
+gsap.from(".cases-title", {
+    scrollTrigger: {
+        trigger: ".cases",
+        start: "top 75%",
+        markers: false,
+        toggleActions: "play none none none",
+    },
+    opacity: 0,
+    xPercent: -110,
+    duration: .8, 
+});
+
+caseTl.from(".card-left", {
+    opacity: 0,
+    xPercent: -110,
+    duration: .6,
+});
+
+caseTl.from(".card-right", {
+    opacity: 0,
+    xPercent: 110,
+    duration: .6,
+});
+
+ScrollTrigger.create({
+    trigger: ".case-cards",
+    start: "top 65%",
+    markers: false,
+    toggleActions: "play none none none",
+    animation: caseTl,
+});
+
+// Contact Animation
+const contactTl = gsap.timeline({});
+
+contactTl.from(".contact-title", {
+    opacity: 0,
+    xPercent: -110,
+    duration: .8, 
+})
+
+contactTl.from(".contact-info",{
+    opacity: 0,
+    yPercent: 110,
+    duration: .8,
+})
+
+contactTl.from(".contact-form",{
+    opacity: 0,
+    yPercent: 110,
+    duration: .8,
+});
+
+ScrollTrigger.create({
+    trigger: ".contact",
+    start: "top 75%",
+    markers: false,
+    toggleActions: "play none none none",
+    animation: contactTl,
+});
+
+// Related Animation
+const relatedTl = gsap.timeline({});
+
+relatedTl.from(".related-title",{
+    opacity: 0,
+    xPercent: -110,
+    duration: .8, 
+});
+
+ScrollTrigger.create({
+    trigger: ".related",
+    start: "top 75%",
+    markers: false,
+    toggleActions: "play none none none",
+    animation: relatedTl,
+});
+
+mm.add("(max-width: 599px)", () => {
+    relatedTl.from(".related-card",{
+        stagger: 0.3,
+        opacity: 0,
+        xPercent: -110,
+        duration: .8,
+    });
+});
+
+mm.add("(min-width: 600px)", () => {
+    relatedTl.from(".related-card",{
+        stagger: 0.3,
+        opacity: 0,
+        yPercent: 110,
+        duration: .8,
+    });
+});
+
+// Tagline Animation
+const taglineTl = gsap.timeline({});
+
+taglineTl.from(".tagline-heading",{
+    opacity: 0,
+    xPercent: -110,
+    duration: .8,
+});
+
+mm.add("(max-width: 1023px)", () => {
+    taglineTl.from(".tagline-explanation",{
+        opacity: 0,
+        duration: .8,
+    });
+});
+
+mm.add("(min-width: 1024px)", () => {
+    taglineTl.from(".tagline-explanation",{
+        opacity: 0,
+        duration: .8,
+        delay: .5,
+    });
+});
+
+ScrollTrigger.create({
+    trigger: ".tagline",
+    start: "top 75%",
+    markers: true,
+    toggleActions: "play none none none",
+    animation: taglineTl,
+});
+
+
+
