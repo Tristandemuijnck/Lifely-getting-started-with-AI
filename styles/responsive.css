@@ -1,24 +1,5 @@
 @media (min-width: 400px){
 
-    /* .menu-label{
-        display: none;
-    } */
-
-    /* .topnav{
-        display: flex;
-    }
-
-    .topnav ul{
-        display: flex;
-        gap: 1em;
-    }
-
-    .topnav ul li a{
-        color: var(--grey70);
-        text-decoration: none;
-        font: var(--font-abstract);
-    } */
-
     .steps-title{
         max-width: 14em;
     }

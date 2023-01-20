@@ -11,7 +11,7 @@ mm.add("(min-width: 375px)", () => {
     heroTl.from(".hero .intro h1 span",{
         clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
         // duration: .8,
-        delay: .5,
+        delay: .8,
     });
 
     heroTl.from(".hero .intro h1",{
@@ -209,10 +209,14 @@ mm.add("(max-width: 599px)", () => {
 });
 
 mm.add("(min-width: 600px)", () => {
-    relatedTl.from(".related-card",{
-        stagger: 0.3,
+    relatedTl.fromTo(".related-card",{
         opacity: 0,
         yPercent: 110,
+    }, 
+    {
+        stagger: 0.3,
+        opacity: 1,
+        yPercent: 1,
         duration: .8,
     });
 });
@@ -244,7 +248,7 @@ mm.add("(min-width: 1024px)", () => {
 ScrollTrigger.create({
     trigger: ".tagline",
     start: "top 75%",
-    markers: true,
+    markers: false,
     toggleActions: "play none none none",
     animation: taglineTl,
 });

@@ -209,6 +209,11 @@ header{
     color: var(--grey20);
 }
 
+.quote header{
+    padding: 0;
+    display: block;
+}
+
 /* Steps */
 .steps{
     background-color: var(--bg-grey);
