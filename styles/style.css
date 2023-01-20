@@ -114,6 +114,7 @@ header{
     display: flex;
     flex-direction: column;
     padding: var(--pad-section);
+    overflow-x: hidden;
 }
 
 .hero .intro{
@@ -128,10 +129,15 @@ header{
     text-align: left;
 }
 
+.hero .intro h1 span{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
 .hero .intro .p-intro{
     font: var(--font-subtitle);
     color: var(--grey70);
     margin-bottom: 2em;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .hero .abstract{
@@ -182,7 +188,7 @@ header{
     padding: var(--pad-section);
     display: flex;
     flex-direction: column;
-    transform: translateX(-110%);
+    /* transform: translateX(-110%); */
 }
 
 .quote .quote-heading{
@@ -210,6 +216,7 @@ header{
     flex-direction: column;
     gap: 2em;
     padding: 2.5em 0;
+    overflow-x: hidden;
 }
 
 .steps-title{
