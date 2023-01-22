@@ -4,11 +4,11 @@
 
 .nav-btn{
     height: auto;
-    position: absolute;
+    position: fixed;
     justify-content: flex-end;
     align-items: center;
     top: 2em;
-    right: 2em;
+    right: 1em;
     z-index: 30;
 }
 
@@ -112,6 +112,7 @@
     left: 100%;
     top: 0;
     padding-left: 10%;
+    padding-top: 5%;
     gap: 2em;
 }
 
@@ -134,7 +135,7 @@
 
 .submenu-link{
     font: var(--font-subtitle);
-    font-size: 2.3em;
+    font-size: 2.1em;
     color: var(--grey99);
     padding: 5% 0;
     line-height: 1;
@@ -168,3 +169,66 @@
     transition: width 250ms ease-out;
 }
 
+@media (max-width: 1300px){
+    .nav-category{
+        font-size: 2.7em;
+    }
+
+    .submenu-link{
+        font-size: 1.8em;
+    }
+}
+
+
+@media (max-width: 900px){
+    .nav-category{
+        font-size: 2.4em;
+    }
+
+    .submenu-link{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 750px){
+    .nav-category{
+        font-size: 2.1em;
+    }
+
+    .submenu-link{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 680px){
+    .nav-content{
+        width: 100%;
+    }
+
+    .nav-close{
+        color: var(--grey50);
+    }
+
+    .nav-item{
+        flex-direction: column;
+    }
+
+    .nav-ul{
+        padding-top: 3em;
+    }
+
+    .nav-submenu{
+        padding-bottom: 1em;
+    }
+
+    .nav-item:hover .nav-submenu{
+        left: 0;
+        bottom: 0;
+        top: 0;
+        padding-left: 0;
+        padding-top: 0;
+        position: relative;
+        float: left;
+        gap: 1em;
+    }
+}
