@@ -98,10 +98,6 @@ header{
     color: var(--grey99);
 }
 
-.nav-close{
-    display: none;
-}
-
 /* Banner Image */
 .banner-img{
     width: 100%;

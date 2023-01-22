@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
     <!-- Js loading -->
     <script src="scripts/animation.js" defer></script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
     <title>Lifely - Getting started with AI</title>
 </head>
 <body>
@@ -26,23 +26,97 @@
         <!-- Navigation -->
         <div class="navigation">
 
-            <!-- Collapsed menu button -->
-            <label class="menu-label" for="menu-btn">Menu
-                <button class="menu-btn" id="menu-btn">
-                    <i id="menu-icon" class="fa fa-bars"></i>
-                </button>
-            </label>
-
             <!-- Open menu -->
             <nav id="topnav" class="topnav">
+                <label id="menu-label" class="menu-label" for="menu-btn">Menu
+                    <button class="menu-btn" id="menu-btn">
+                        <i id="menu-icon" class="fa fa-bars"></i>
+                        <!-- <svg id="menu-icon" width="30" class="openmenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                            <path class="top" d="M0 9h30v2H0z"/>
+                            <line class="mid" x1="0" y1="15" x2="30" y2="15" stroke="black" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                            <path class="bot" d="M0 19h30v2H0z"/>
+                        </svg> -->
+                    </button>
+                </label>
+
                 <div class="nav-btn">
                     <button class="nav-close" id="nav-close">Close</button>
                 </div>
-                <ul class="nav-ul">
-                    <li><a href="#steps">Steps</a></li>
-                    <li><a href="#cases">Cases</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+
+                <!-- Navigation content -->
+                <div class="nav-overlay">
+                    <!-- Menu content -->
+                    <div class="nav-content">
+                        <ul class="nav-ul">
+                            <li class="nav-item">
+                                <a href="#" class="nav-category">Lifely</a>
+                                <ul class="nav-submenu">
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Work</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Culture</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">People</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Knowledge</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Jobs</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-category">Services</a>
+                                <ul class="nav-submenu">
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Agile Product Teams</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Artificial Intelligence</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Strategic Development</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-category">Solutions</a>
+                                <ul class="nav-submenu">
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Software as a Service</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Cross-Platform Apps</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link"> Software Rebuild</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Common Ground Software</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Getting started with AI</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Robotic Process Automation</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Google Design Sprint</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="#" class="submenu-link">Ai in Production</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
