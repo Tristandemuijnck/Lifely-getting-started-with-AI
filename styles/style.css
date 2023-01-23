@@ -77,7 +77,7 @@ header{
     padding: 1.1em 1.1em;
 }
 
-#logo{
+.logo{
     width: 3em;
 }
 
@@ -89,6 +89,12 @@ header{
     gap: 0.3em;
 }
 
+.menu-label:hover{
+    transform: scale(1.1);
+    transition: transform 250ms ease;
+    cursor: pointer;
+}
+
 .menu-btn{
     border: none;
     background-color: transparent;
@@ -96,6 +102,10 @@ header{
 
 .menu-icon{
     color: var(--grey99);
+}
+
+.menu-icon:hover{
+    cursor: pointer;
 }
 
 /* Banner Image */
