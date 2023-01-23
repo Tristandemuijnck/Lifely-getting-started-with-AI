@@ -7,6 +7,11 @@
     --bg-grey: #F6F6F4;
     --accent-red: #FF6B6B;
 
+    --aa-grey99: #2d2c24;
+    --aa-grey70: #737165;
+    --aa-grey20: #f6f6f2;
+    --aa-red: #e40000;
+
     --font-title: 1.7em AktivBD, sans-serif;
     --font-title-large: 2.5em AktivBD, sans-serif;
     --font-subtitle: 1.1em AktivLT, sans-serif;
@@ -142,7 +147,7 @@ header{
 
 .hero .intro .p-intro{
     font: var(--font-subtitle);
-    color: var(--grey70);
+    color: var(--aa-grey70);
     margin-bottom: 2em;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -166,19 +171,20 @@ header{
 }
 
 .hero .primary a{
-    color: var(--grey70);
+    color: var(--aa-grey70);
+
 }
 
 .hero .primary .arrow-right{
-    fill: var(--grey70);
+    fill: var(--aa-grey70);
 }
 
 .hero .secondary a{
-    color: var(--accent-red);
+    color: var(--aa-red);
 }
 
 .hero .secondary .arrow-right{
-    fill: var(--accent-red);
+    fill: var(--aa-red);
 }
 
 .arrow-right{
@@ -191,7 +197,7 @@ header{
 
 /* Quote */
 .quote{
-    background-color: var(--grey70);
+    background-color: var(--aa-grey70);
     padding: var(--pad-section);
     display: flex;
     flex-direction: column;
@@ -208,12 +214,14 @@ header{
 }
 
 .quote .quote-phonetic{
-    color: var(--grey99);
+    /* color: var(--grey99); */
+    color: var(--aa-grey20);
     font-size: 1.1em;
+    text-decoration: underline;
 }
 
 .quote .quote-def{
-    color: var(--grey20);
+    color: var(--aa-grey20);
 }
 
 .quote header{
@@ -235,7 +243,7 @@ header{
     /* padding: 1em 0.8em; */
     padding-left: 0.8em;
     font: var(--font-title);
-    color: var(--grey99);
+    color: var(--aa-grey99);
     text-align: left;
 }
 
@@ -301,7 +309,7 @@ header{
 
 .step-subtitle{
     font: var(--font-subtitle);
-    color: var(--grey70);
+    color: var(--aa-grey70);
 }
 
 .text-right{
@@ -350,7 +358,8 @@ header{
 }
 
 .case-link{
-    color: var(--accent-red);
+    /* color: var(--accent-red); */
+    color: #ff7c7c;
     text-decoration: underline;
 }
 
@@ -401,12 +410,12 @@ header{
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-    color: var(--grey70);
+    color: var(--aa-grey70);
     font: var(--font-subtitle);
 }
 
 .email{
-    color: var(--accent-red);
+    color: var(--aa-red);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -468,7 +477,7 @@ header{
 }
 
 .related-anchor{
-    color: var(--accent-red);
+    color: #e40000;
     text-decoration: underline;
     font: var(--font-abstract);
 }
@@ -530,7 +539,7 @@ header{
 
 .tagline-subtitle{
     font: var(--font-subtitle);
-    color: var(--grey70);
+    color: var(--aa-grey70);
 }
 
 .tagline-explanation{
@@ -545,7 +554,7 @@ header{
 }
 
 .tagline-span{
-    color: var(--accent-red);
+    color: var(--aa-red);
 }
 
 /* Credentials */

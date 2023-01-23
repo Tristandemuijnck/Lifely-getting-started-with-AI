@@ -125,6 +125,12 @@
         max-width: 6em;
         font-family: AktivBD;
     }
+
+    .related-anchor{
+        color: #ff7c7c;
+        text-decoration: underline;
+        font: var(--font-abstract);
+    }
 }
 
 @media (min-width: 700px){
