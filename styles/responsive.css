@@ -381,12 +381,12 @@
     }
 
     .case-card{
-        align-items: center;
+        /* align-items: center; */
         justify-content: flex-end;
     }
 
     .case-img{
-        width: 100%;
+        width: 75%;
     }
 
     .contact-title{
