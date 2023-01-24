@@ -201,7 +201,6 @@ header{
     padding: var(--pad-section);
     display: flex;
     flex-direction: column;
-    /* transform: translateX(-110%); */
 }
 
 .quote .quote-heading{
@@ -214,7 +213,6 @@ header{
 }
 
 .quote .quote-phonetic{
-    /* color: var(--grey99); */
     color: var(--aa-grey20);
     font-size: 1.1em;
     text-decoration: underline;
@@ -240,7 +238,6 @@ header{
 }
 
 .steps-title{
-    /* padding: 1em 0.8em; */
     padding-left: 0.8em;
     font: var(--font-title);
     color: var(--aa-grey99);
@@ -277,7 +274,6 @@ header{
     border-style: solid solid solid none;
     border-top-right-radius: 0.6em;
     border-bottom-right-radius: 0.6em;
-    /* align-items: center; */
 }
 
 .step-right{
@@ -285,9 +281,6 @@ header{
     border-style: solid none solid solid;
     border-top-left-radius: 0.6em;
     border-bottom-left-radius: 0.6em;
-    /* flex-direction: row-reverse; */
-    /* align-items: center; */
-    /* text-align: right; */
 }
 
 .step-title{
@@ -358,7 +351,6 @@ header{
 }
 
 .case-link{
-    /* color: var(--accent-red); */
     color: #ff7c7c;
     text-decoration: underline;
 }
@@ -435,7 +427,6 @@ header{
     display: flex;
     flex-direction: column;
     gap: 2em;
-    /* background-color: var(--grey70); */
     background-color: var(--accent-red);
 }
 
@@ -453,7 +444,6 @@ header{
 .related-card{
     padding: 0.5em 0.6em;
     border: solid 2px var(--grey70);
-    /* border-radius: 0.1em 0.6em; */
     border-radius: 0.3em 0.3em 0 0;
     background-color: var(--bg-grey);
 }

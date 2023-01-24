@@ -10,25 +10,21 @@ const steps = document.querySelectorAll(".step");
 mm.add("(min-width: 375px)", () => {
     heroTl.from(".hero .intro h1 span",{
         clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-        // duration: .8,
         delay: .8,
     });
 
     heroTl.from(".hero .intro h1",{
         xPercent: 20,
-        // duration: .8,
     });
 
     heroTl.from(".hero .intro .p-intro",{
         opacity: 0,
         xPercent: 20,
-        // duration: .8,
     });
 
     heroTl.from(".hero .abstract, .hero .cta",{
         opacity: 0,
         xPercent: 20,
-        // duration: .8,
     });
 
     heroTl.from(".hero .hero-sideimg",{
@@ -47,7 +43,6 @@ gsap.from(".quote-heading, .quote-def",{
     },
     stagger: 0.3,
     xPercent: -120,
-    // x: 0,
     duration: .6,
     ease: "power1.out"
 });
