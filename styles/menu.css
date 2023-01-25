@@ -113,7 +113,7 @@
     top: 0;
     padding-left: 10%;
     padding-top: 5%;
-    gap: 2em;
+    gap: 1em;
 }
 
 .nav-item:hover .nav-submenu, .nav-item:hover .nav-category{
