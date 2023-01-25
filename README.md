@@ -1,5 +1,8 @@
 # Lifely
 
+## Titel
+Lifely landing page | Getting started with AI
+
 ## Beschrijving
 Dit is de repository van mijn uitvoering van the-startup-responsive-interactieve-website - Lifely.
 
@@ -8,6 +11,9 @@ De tool is gemaakt voor de volgende user story:
 
 ### Preview
 <img src="https://user-images.githubusercontent.com/43402897/213940604-5526c51b-fe3c-436f-a67e-4fff1e3ee0dc.gif" width=700>
+
+## 🧍‍ Opdrachtgever
+De opdrachtgever voor dit project is Lifely - https://lifely.nl/
 
 ## :mag: Kenmerken
 
