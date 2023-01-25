@@ -1,5 +1,8 @@
 # Lifely
 
+## Titel
+Lifely landing page | Getting started with AI
+
 ## Beschrijving
 Dit is de repository van mijn uitvoering van the-startup-responsive-interactieve-website - Lifely.
 
